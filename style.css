@@ -1,62 +1,22 @@
-/* Impostazioni generali */
 body {
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', sans-serif;
-    background-color: #ffffff;
-    color: #1d1d1f;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     min-height: 100vh;
     text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
   }
   
-  /* Header */
-  header h1 {
+  h1 {
     font-size: 3rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
   
-  header p {
-    font-size: 1.25rem;
-    color: #6e6e73;
-  }
-  
-  /* Immagine */
-  main img {
-    max-width: 100%;
-    height: auto;
-    margin: 2rem 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Pulsante */
-  button {
-    background-color: #0071e3;
-    color: #ffffff;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #005bb5;
-  }
-  
-  /* Responsive */
-  @media (max-width: 600px) {
-    header h1 {
-      font-size: 2rem;
-    }
-  
-    header p {
-      font-size: 1rem;
-    }
+  p {
+    font-size: 1.5rem;
+    color: #555;
   }
   
