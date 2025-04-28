@@ -3,19 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Area protetta</title>
+  <title>Area Protetta</title>
+  <style>
+    body {
+      display: none;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
   <script>
     const user = prompt("Inserisci il nome utente:");
     const pass = prompt("Inserisci la password:");
 
-    if (user !== "miauser" || pass !== "miapassword") {
-      document.body.innerHTML = "<h1>Accesso Negato</h1>";
-      throw new Error("Accesso negato");
+    if (user === "miauser" && pass === "miapassword") {
+      document.addEventListener("DOMContentLoaded", () => {
+        document.body.style.display = "block";
+      });
+    } else {
+      document.write("<h1>Accesso negato.</h1>");
     }
   </script>
 </head>
 <body>
-  <h1>Benvenuto nell'area protetta!</h1>
-  <p>Contenuti riservati a utenti autorizzati.</p>
+  <h1>Benvenuto nell'area riservata!</h1>
+  <p>Solo utenti autorizzati possono vedere questo contenuto.</p>
 </body>
 </html>
