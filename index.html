@@ -3,13 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Il Mio Primo Sito</title>
-  <link rel="stylesheet" href="style.css">  <!-- Link al file CSS -->
+  <title>Area protetta</title>
+  <script>
+    const user = prompt("Inserisci il nome utente:");
+    const pass = prompt("Inserisci la password:");
+
+    if (user !== "miauser" || pass !== "miapassword") {
+      document.body.innerHTML = "<h1>Accesso Negato</h1>";
+      throw new Error("Accesso negato");
+    }
+  </script>
 </head>
 <body>
-  <div>
-    <h1>Ciao a tutti!</h1>
-    <p>Benvenuti nel mio primo sito web! 🎉</p>
-  </div>
+  <h1>Benvenuto nell'area protetta!</h1>
+  <p>Contenuti riservati a utenti autorizzati.</p>
 </body>
 </html>
